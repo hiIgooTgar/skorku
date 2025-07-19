@@ -59,8 +59,8 @@ nav .welcome p {
 
 .content-main .nilai {
   margin: 5rem 0;
-  width: 300px;
-  padding: 2rem 0;
+  width: 350px;
+  padding: 2rem 1rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -138,6 +138,23 @@ nav .welcome p {
 
 .perhitungan .kontrak-perkuliahan h3 {
   text-align: center;
+}
+
+.total-count {
+  text-align: center;
+  margin-top: 1.8rem;
+  font-size: 0.85rem;
+}
+
+#persentaseKontrakCount,
+#countNilaiMatkul {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border: 1px solid #000;
+  box-shadow: 3px 3px #000;
+  border-radius: 3px;
 }
 
 .perhitungan .kontrak-perkuliahan .form-control {

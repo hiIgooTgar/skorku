@@ -87,9 +87,12 @@ function hitungNilai() {
   };
 
   const totalBobot = bobot.presensi + bobot.tugas + bobot.uts + bobot.uas;
+  document.getElementById(
+    "persentaseKontrakCount"
+  ).innerHTML = `${totalBobot}%`;
 
   if (totalBobot > 100) {
-    resultScore.innerHTML = "<p>Total bobot max 100%</p>";
+    resultScore.innerHTML = "<p>Total bobot kontrak perkuliahan max 100%</p>";
     resultGrade.innerHTML = "<p>-</p>";
     resultScore.style.color = "red";
     return;
@@ -103,6 +106,10 @@ function hitungNilai() {
     uts: parseFloat(nilai.uts.input.value) || 0,
     uas: parseFloat(nilai.uas.input.value) || 0,
   };
+
+  document.getElementById("countNilaiMatkul").innerHTML = `${
+    skor.presensi + skor.tugas + skor.uts + skor.uas
+  }`;
 
   const total =
     (skor.presensi * bobot.presensi) / 100 +
