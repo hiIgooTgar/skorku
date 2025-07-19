@@ -88,7 +88,7 @@ function hitungNilai() {
 
   const totalBobot = bobot.presensi + bobot.tugas + bobot.uts + bobot.uas;
 
-  if (totalBobot !== 100) {
+  if (totalBobot > 100) {
     resultScore.innerHTML = "<p>Total bobot max 100%</p>";
     resultGrade.innerHTML = "<p>-</p>";
     resultScore.style.color = "red";
