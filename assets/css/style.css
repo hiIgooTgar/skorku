@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Fira Sans", sans-serif;
+}
+
+:root {
+  --primary: #41c2b5;
+}
+
+nav {
+  width: 100%;
+  padding: 3rem 18%;
+  background: #fff;
+  color: #000;
+  border-bottom: 1px solid #aaa;
+}
+
+nav .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+nav .logo .social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+nav .logo .social-media a {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  box-shadow: 8px 8px #000;
+  border-radius: 3px;
+}
+
+nav .welcome p {
+  text-align: justify;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.content-main {
+  width: 100%;
+  display: flex;
+  padding: 0 18%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-main .nilai {
+  margin: 5rem 0;
+  width: 300px;
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-shadow: 8px 8px #000;
+}
+
+.content-main .nilai h1 {
+  font-size: 4rem;
+}
+
+.content-main .nilai h3 {
+  font-weight: 400;
+}
+
+.range-colored {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(to right, green 0%, yellow 50%, red 100%);
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.range-colored::-webkit-slider-runnable-track {
+  height: 8px;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.range-colored::-moz-range-track {
+  height: 8px;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.range-colored::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border: 2px solid #999;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.range-colored::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border: 2px solid #999;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.perhitungan {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.perhitungan .kontrak-perkuliahan {
+  border: 1px solid #000;
+  width: 100%;
+  flex: 1 1 50%;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 8px 8px #000;
+}
+
+.perhitungan .kontrak-perkuliahan h3 {
+  text-align: center;
+}
+
+.perhitungan .kontrak-perkuliahan .form-control {
+  margin-top: 1.2rem;
+}
+
+.perhitungan .kontrak-perkuliahan .form-control label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.perhitungan .kontrak-perkuliahan .form-control .input-number {
+  display: grid;
+  grid-template-columns: 80% 15% 5%;
+  gap: 0.5rem;
+}
+
+.perhitungan input[type="range"] {
+  margin-top: 8px;
+}
+
+.perhitungan input[type="number"] {
+  border: 1px solid #000;
+  outline: none;
+  padding: 0.2rem;
+  box-shadow: 3px 3px #000;
+}
+
+.perhitungan .nilai-matakul {
+  border: 1px solid #000;
+  width: 100%;
+  flex: 1 1 50%;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 8px 8px #000;
+}
+
+.perhitungan .nilai-matakul h3 {
+  text-align: center;
+}
+
+.perhitungan .nilai-matakul .form-control {
+  margin-top: 1.2rem;
+}
+
+.perhitungan .nilai-matakul .form-control label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.perhitungan .nilai-matakul .form-control .input-number {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 5rem 0 2rem;
+}
+
+footer i {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 3rem 15%;
+  }
+
+  nav .logo {
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .content-main {
+    padding: 0 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 3rem 13%;
+  }
+
+  .content-main {
+    padding: 0 13%;
+  }
+
+  .content-main .nilai {
+    width: 100%;
+  }
+
+  .perhitungan {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    padding: 3rem 10%;
+  }
+
+  nav .logo a span {
+    display: none;
+  }
+
+  .content-main {
+    padding: 0 10%;
+  }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkorKu | Kalkulator Nilai Mata Kuliah</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>SkorKu</h2>
+        <div class="social-media">
+          <a class="instagram" href="https://www.instagram.com/tgar_igohy/"
+            ><i class="fab fa-instagram"></i> <span>Instagram</span></a
+          >
+          <a
+            class="linkedin"
+            href="https://www.linkedin.com/in/igo-tegar-prambudhy"
+            ><i class="fab fa-linkedin"></i> <span>LinkedIn</span></a
+          >
+          <a class="github" href="https://github.com/hiIgooTgar"
+            ><i class="fab fa-github"></i> <span>Github</span></a
+          >
+        </div>
+      </div>
+      <div class="welcome">
+        <p>
+          Selamat datang di <strong>SkorKu</strong> — aplikasi penghitung nilai
+          akhir mata kuliah berbasis kontrak perkuliahan. Tentukan bobot
+          penilaian sesuai kontrak dosen, masukkan nilai kamu, dan lihat
+          langsung hasil akhir beserta predikatnya. Cocok untuk mahasiswa dan
+          dosen yang ingin transparansi dan kecepatan dalam evaluasi akademik.
+        </p>
+      </div>
+    </nav>
+
+    <section class="content-main">
+      <main class="nilai">
+        <h2>Nilai Akhir (NA)</h2>
+        <h1>A</h1>
+        <h3>100.0</h3>
+        <p></p>
+      </main>
+      <main class="perhitungan">
+        <div class="kontrak-perkuliahan" id="kontrakPerkuliahan">
+          <h3>Kontrak Perkuliahan</h3>
+          <div class="form-control">
+            <label for="">Presensi</label>
+            <div class="input-number">
+              <input
+                type="range"
+                name=""
+                class="range-colored"
+                id="kontrakPresensiRange"
+                value="25"
+                max="100"
+                min="0"
+              />
+              <input type="number" value="25" id="kontrakPresensiInput" />
+              <span>%</span>
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="">Tugas</label>
+            <div class="input-number">
+              <input
+                type="range"
+                name=""
+                class="range-colored"
+                id="kontrakTugasRange"
+                value="25"
+                max="100"
+                min="0"
+              />
+              <input type="number" value="25" id="kontrakTugasInput" />
+              <span>%</span>
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="">UTS</label>
+            <div class="input-number">
+              <input
+                type="range"
+                name=""
+                class="range-colored"
+                id="kontrakUTSRange"
+                value="25"
+                max="100"
+                min="0"
+              />
+              <input type="number" value="25" id="kontrakUTSInput" />
+              <span>%</span>
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="">UAS</label>
+            <div class="input-number">
+              <input
+                type="range"
+                name=""
+                class="range-colored"
+                id="kontrakUASRange"
+                value="25"
+                max="100"
+                min="0"
+              />
+              <input type="number" value="25" id="kontrakUASInput" />
+              <span>%</span>
+            </div>
+          </div>
+        </div>
+        <div class="nilai-matakul" id="nilaiMatakul">
+          <h3>Nilai Matakuliah</h3>
+          <div class="form-control">
+            <label for="">Presensi</label>
+            <div class="input-number">
+              <input
+                type="range"
+                name=""
+                class="range-colored"
+                id="nilaiPresensiRange"
+                value="50"
+                max="100"
+                min="0"
+              />
+              <input type="number" value="50" id="nilaiPresensiInput" />
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="">Tugas</label>
+            <div class="input-number">
+              <input
+                type="range"
+                name=""
+                class="range-colored"
+                id="nilaiTugasRange"
+                value="50"
+                max="100"
+                min="0"
+              />
+              <input type="number" value="50" id="nilaiTugasInput" />
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="">UTS</label>
+            <div class="input-number">
+              <input
+                type="range"
+                name=""
+                class="range-colored"
+                id="nilaiUTSRange"
+                value="50"
+                max="100"
+                min="0"
+              />
+              <input type="number" value="50" id="nilaiUTSInput" />
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="">UAS</label>
+            <div class="input-number">
+              <input
+                type="range"
+                name=""
+                class="range-colored"
+                id="nilaiUASRange"
+                value="50"
+                max="100"
+                min="0"
+              />
+              <input type="number" value="50" id="nilaiUASInput" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <footer>
+      <p>
+        Dibuat oleh <i class="fas fa-user"></i> Igo Tegar Prambudhy ( - _ - )
+      </p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
