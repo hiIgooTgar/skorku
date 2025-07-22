@@ -83,7 +83,6 @@ function calculateGrade() {
   if (totalContractWeight === 0) {
     resultValueNumber.innerText = "0.0";
     resultGradeNA.innerText = "E";
-    resultGradeNA.setAttribute("class", "color-red");
     return;
   }
 
@@ -103,21 +102,8 @@ function calculateGrade() {
     (Number(values.nilaiUTSInput) * Number(values.kontrakUTSInput)) / 100 +
     (Number(values.nilaiUASInput) * Number(values.kontrakUASInput)) / 100;
 
-  resultValueNumber.innerText = roundDecimal(finalScore);
+  resultValueNumber.innerText = roundValueDecimal(finalScore);
   resultGradeNA.innerText = determineGrade(finalScore);
-  resultGradeNA.setAttribute("class", determineColor(finalScore));
-}
-
-function determineColor(finalScore) {
-  if (finalScore >= 75) {
-    return "color-green";
-  }
-
-  if (finalScore >= 60) {
-    return "color-yellow";
-  }
-
-  return "color-red";
 }
 
 function determineGrade(finalScore) {
@@ -133,7 +119,7 @@ function determineGrade(finalScore) {
   return "E";
 }
 
-function roundDecimal(number) {
+function roundValueDecimal(number) {
   return Math.round(number * 100) / 100;
 }
 
@@ -151,7 +137,7 @@ function updateContractTotal() {
     resultValueNumber.innerHTML =
       "<p>Total bobot kontrak perkuliahan max 100%</p>";
     resultValueNumber.style.color = "red";
-    resultValueNumber.style.fontSize = "0.94rem";
+    resultValueNumber.style.fontSize = "0.95rem";
   } else {
     persentaseKontrakCount.style.color = "";
     resultValueNumber.style.color = "";
