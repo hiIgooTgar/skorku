@@ -36,8 +36,8 @@
           Selamat datang di <strong>SkorKu</strong> — aplikasi penghitung nilai
           akhir mata kuliah berbasis kontrak perkuliahan. Tentukan bobot
           penilaian sesuai kontrak dosen, masukkan nilai kamu, dan lihat
-          langsung hasil akhir beserta predikatnya. Cocok untuk mahasiswa dan
-          dosen yang ingin transparansi dan kecepatan dalam evaluasi akademik.
+          langsung hasil akhir beserta predikatnya. Cocok untuk mahasiswa yang
+          ingin transparansi dan kecepatan dalam evaluasi akademik.
         </p>
       </div>
     </nav>
@@ -45,8 +45,8 @@
     <section class="content-main">
       <main class="nilai">
         <h2>Nilai Akhir (NA)</h2>
-        <h1>A</h1>
-        <h3>100.0</h3>
+        <h1 id="resultGradeNA"></h1>
+        <h3 id="resultValueNumber"></h3>
         <p></p>
       </main>
       <main class="perhitungan">
@@ -59,7 +59,7 @@
                 type="range"
                 name=""
                 class="range-colored"
-                id="kontrakPresensiRange"
+                data-value="kontrakPresensiInput"
                 value="25"
                 max="100"
                 min="0"
@@ -75,7 +75,7 @@
                 type="range"
                 name=""
                 class="range-colored"
-                id="kontrakTugasRange"
+                data-value="kontrakTugasInput"
                 value="25"
                 max="100"
                 min="0"
@@ -91,7 +91,7 @@
                 type="range"
                 name=""
                 class="range-colored"
-                id="kontrakUTSRange"
+                data-value="kontrakUTSInput"
                 value="25"
                 max="100"
                 min="0"
@@ -107,7 +107,7 @@
                 type="range"
                 name=""
                 class="range-colored"
-                id="kontrakUASRange"
+                data-value="kontrakUASInput"
                 value="25"
                 max="100"
                 min="0"
@@ -129,7 +129,8 @@
                 type="range"
                 name=""
                 class="range-colored"
-                id="nilaiPresensiRange"
+                data-value="nilaiPresensiInput"
+                step="1"
                 value="50"
                 max="100"
                 min="0"
@@ -144,7 +145,8 @@
                 type="range"
                 name=""
                 class="range-colored"
-                id="nilaiTugasRange"
+                data-value="nilaiTugasInput"
+                step="1"
                 value="50"
                 max="100"
                 min="0"
@@ -159,7 +161,8 @@
                 type="range"
                 name=""
                 class="range-colored"
-                id="nilaiUTSRange"
+                data-value="nilaiUTSInput"
+                step="1"
                 value="50"
                 max="100"
                 min="0"
@@ -174,7 +177,8 @@
                 type="range"
                 name=""
                 class="range-colored"
-                id="nilaiUASRange"
+                data-value="nilaiUASInput"
+                step="1"
                 value="50"
                 max="100"
                 min="0"

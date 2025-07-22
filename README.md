@@ -25,12 +25,3 @@
   <li><strong>CSS3</strong> – Styling slider, layout, dan responsivitas.</li>
   <li><strong>JavaScript (Vanilla)</strong> – Untuk logika perhitungan nilai, sinkronisasi slider-input, dan validasi kontrak.</li>
 </ul>
-
-<h2>Cara Menjalankan Aplikasi</h2>
-<ol>
-  <li>Clone repository ini ke lokal:
-    <pre><code>git clone https://github.com/username/skorku.git</code></pre>
-  </li>
-  <li>Buka file <code>index.html</code> di browser favorit kamu.</li>
-  <li>Mulai masukkan nilai dan bobot kontrak. Nilai akhir akan muncul secara otomatis!</li>
-</ol>
